@@ -8,7 +8,7 @@ import authRoutes from './routes/authRoutes.js'
 import courseRoutes from './routes/courseRoutes.js'
 import contactRoutes from './routes/contactRoutes.js'
 import enrollmentRoutes from './routes/enrollmentRoutes.js'
-
+import userRoutes from './routes/userRoutes.js'
 // Load environment variables
 dotenv.config()
 
@@ -39,6 +39,7 @@ app.use('/api/auth', authRoutes)
 app.use('/api/courses', courseRoutes)
 app.use('/api/contact', contactRoutes)
 app.use('/api/enrollments', enrollmentRoutes)
+app.use('/api/users', userRoutes)
 
 // Welcome route
 app.get('/', (req, res) => {
