@@ -53,7 +53,7 @@ export const register = async (req, res) => {
 
     await sendEmail({
       to: email,
-      subject: 'Verifica tu cuenta - Premium School',
+      subject: 'Verifica tu cuenta - UEPMRMP',
       html: `
         <h1>Verificación de cuenta</h1>
         <p>Hola ${user.name},</p>
@@ -173,7 +173,7 @@ export const resendVerificationCode = async (req, res) => {
 
     await sendEmail({
       to: email,
-      subject: 'Nuevo código de verificación - Premium School',
+      subject: 'Nuevo código de verificación - UEPMRMP',
       html: `
         <h1>Nuevo código de verificación</h1>
         <p>Hola ${user.name},</p>
@@ -275,7 +275,7 @@ export const forgotPassword = async (req, res) => {
 
     await sendEmail({
       to: email,
-      subject: 'Restablecer contraseña - Premium School',
+      subject: 'Restablecer contraseña - UEPMRMP',
       html: `
         <h1>Restablecer contraseña</h1>
         <p>Hola ${user.name},</p>
